@@ -3,9 +3,8 @@
   "version": "2.2.10",
   "description": "A highly scalable, Progressive Web Application foundation with the best Developer Experience (DX).",
   "scripts": {
-    "start": "pawjs --no-cache --env=development start",
+    "start": "pawjs --no-cache --env-config-path=./.prod.env --env=development start",
     "build": "pawjs --no-cache --env-config-path=./.prod.env --env=production build",
-    "build:demo": "pawjs --no-cache --env-config-path=./.demo.env --env=production build",
     "lint": "pawjs lint",
     "test": "pawjs --no-cache test"
   },
